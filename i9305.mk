@@ -82,10 +82,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Stk \
-    SamsungServiceMode \
-    LockClock
+    SamsungServiceMode
 
-$(call inherit-product, vendor/cyanide/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 
 # Samsung symbols
 PRODUCT_PACKAGES += \

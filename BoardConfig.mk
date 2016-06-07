@@ -63,9 +63,3 @@ endif
 
 # LZMA
 WITH_LZMA_OTA := true
-
-# Cyanide Build Flags
-TARGET_CYANIDE_ROM := 4.9
-TARGET_NDK_CYANIDE_ROM := 4.9
-TARGET_CYANIDE_ARM := 4.8
-
