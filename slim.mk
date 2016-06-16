@@ -6,7 +6,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common cyanide stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9305/full_i9305.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9305
-PRODUCT_NAME := du_i9305
+PRODUCT_NAME := slim_i9305
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9305
 PRODUCT_MANUFACTURER := samsung
