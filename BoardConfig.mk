@@ -37,6 +37,10 @@ TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := custom_i9305_defconfig
 
+# Test
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9305/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
