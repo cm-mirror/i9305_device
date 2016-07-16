@@ -36,6 +36,7 @@ TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_i9305_defconfig
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9305/rootdir/fstab.smdk4x12
