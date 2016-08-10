@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# This variable is set first, so it can be overridden
-# by BoardConfigVendor.mk
-
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 -include device/samsung/smdk4412-qcom-common/BoardCommonConfig.mk
 
@@ -30,7 +27,6 @@ COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 
 
 # Camera
 COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
-
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # Kernel
@@ -45,13 +41,10 @@ RECOVERY_FSTAB_VERSION := 2
 # assert
 TARGET_OTA_ASSERT_DEVICE := m3,m3xx,i9305,GT-I9305
 
-# inherit from the proprietary version
--include vendor/samsung/i9305/BoardConfigVendor.mk
-
 # Selinux
 BOARD_SEPOLICY_DIRS += device/samsung/i9305/selinux
 BOARD_SEPOLICY_DIRS += device/samsung/i9305/rilchroot/selinux
 
-#this is a hack, it relies on this file being processed after the one from smdk4412-qcom-common
+# This is a hack, it relies on this file being processed after the one from smdk4412-qcom-common
 BOARD_RIL_CLASS += ../../../device/samsung/i9305/ril/
 
