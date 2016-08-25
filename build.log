@@ -1,0 +1,6 @@
+device/samsung/i9305/AndroidProducts.mk:19: *** missing separator.  Stop.
+
+** Don't have a product spec for: 'aosp_i9305'
+** Do you have the right repo manifest?
+
+No such item in brunch menu. Try 'breakfast'
